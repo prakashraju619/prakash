@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --accent: #58a6ff;
+            --code-green: #2ea043;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace; /* Terminal vibe */
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: var(--card-bg);
+            padding: 40px;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        h1 { color: var(--accent); margin-top: 0; }
+        .tagline { font-size: 1.1rem; margin-bottom: 20px; color: #8b949e; }
+        
+        /* Skill Badges */
+        .skills { display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0; }
+        .badge {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--code-green);
+        }
+
+        .btn-group { margin-top: 30px; }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--code-green);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-right: 10px;
+        }
+        .btn:hover { opacity: 0.9; }
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+        }
+        .btn-outline:hover { background-color: rgba(88, 166, 255, 0.1); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p style="color: #8b949e; font-size: 0.9rem;">root@portfolio:~# ./init.sh</p>
+        <h1>DevOps Engineer</h1>
+        <p class="tagline">Automating infrastructure, scaling clusters, and streamlining CI/CD pipelines.</p>
+        
+        <hr style="border-color: #30363d; margin: 20px 0;">
+
+        <h3>Core Stack</h3>
+        <div class="skills">
+            <span class="badge">AWS Cloud</span>
+            <span class="badge">Azure Kubernetes (AKS)</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Terraform</span>
+            <span class="badge">CI/CD</span>
+            <span class="badge">Linux</span>
+        </div>
+
+        <div class="btn-group">
+            <a href="mailto:prakashraju619@gmail.com" class="btn">Contact Me</a>
+            <a href="https://github.com/" target="_blank" class="btn btn-outline">GitHub</a>
+            <a href="https://linkedin.com/prakash-vegiraju" target="_blank" class="btn btn-outline">LinkedIn</a>
+        </div>
+    </div>
+
+</body>
+</html>
